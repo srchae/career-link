@@ -7,15 +7,54 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* 시스템 모드에 따른 백그라운드 컬러 설정 */
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "WantedSans", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
 }
