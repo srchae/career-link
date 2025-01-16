@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <main className="w-full min-h-screen">
       <FullScreenContainer>
-        <div className="flex w-full min-h-screen gap-6 py-8">
-          <div className="w-2/3 max-h-screen overflow-y-scroll scrollbar-hide space-y-6 px-2">
-            <div className="sticky top-0 z-10 bg-white py-4 flex w-full items-center justify-center">
+        <div className="flex w-full min-h-screen gap-6 py-8 justify-center">
+          <div className="w-2/3 max-h-screen overflow-visible scrollbar-hide space-y-6">
+            <div className="sticky py-4 flex w-full items-center justify-center">
               <Searchbar />
             </div>
             {posts.map((post) => (
