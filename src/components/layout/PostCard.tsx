@@ -7,7 +7,7 @@ export const PostCard = ({
   comments,
 }: any) => {
   return (
-    <div className="p-6 bg-white rounded shadow flex flex-col gap-4">
+    <div className="p-6 mx-2 bg-white rounded shadow flex flex-col gap-4">
       <p className="font-semibold text-2xl">{title}</p>
       <div className="text-gray-600 text-sm w-full flex justify-between">
         <div>

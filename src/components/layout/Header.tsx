@@ -4,14 +4,18 @@ import { FullScreenContainer } from "./FullScreenContainer";
 
 export default function Header() {
   return (
-    <header className="p-6 shadow-sm sticky top-0 z-10 bg-background">
+    <header className="w-full z-10 p-4 sticky top-0  bg-white">
       <FullScreenContainer>
         <nav className="flex w-full justify-between items-center">
           <Link href="/">
-            <p>Logo</p>
+            <p className="text-xl font-semibold">
+              Career<span className="text-lime-500">📢</span>Link
+            </p>
           </Link>
           <section className="flex items-center gap-5">
-            <div className="flex gap-4 items-center">button</div>
+            <button className="flex gap-4 items-center bg-[#334155] text-white p-3 px-6 rounded-3xl">
+              로그인
+            </button>
           </section>
         </nav>
       </FullScreenContainer>
