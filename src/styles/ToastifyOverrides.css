@@ -1,0 +1,13 @@
+.Toastify__toast {
+  font-family: "WantedSans", sans-serif;
+  font-size: 16px; /* 폰트 크기 변경 */
+  color: #333; /* 폰트 색상 변경 */
+}
+
+.Toastify__toast--success {
+  /* 경고 알림의 특정 스타일 */
+  /* 배경색 */
+  /* background-color: #ffe6e6;  */
+  /* 텍스트 색상 */
+  /* color: #cc0000; */
+}

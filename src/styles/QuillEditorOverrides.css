@@ -1,0 +1,114 @@
+/* 툴바 전체 배경 및 버튼 정렬 */
+.ql-toolbar {
+  background-color: #f8f9fa !important;
+  border: none !important;
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  padding: 10px 0;
+  font-family: "WantedSans", sans-serif !important;
+}
+
+/* 툴바 버튼 스타일 */
+.ql-toolbar .ql-formats button {
+  background: none;
+  border: none;
+  margin: 0 8px; /* 버튼 간격 */
+  padding: 8px;
+  color: #555; /* 기본 색상 */
+  font-size: 16px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.ql-toolbar .ql-formats button:hover {
+  color: #007bff; /* hover 색상 */
+  background-color: #e3f2fd;
+  border-radius: 4px;
+}
+
+/* 툴바 버튼 활성화 상태 */
+.ql-toolbar .ql-formats button.ql-active {
+  color: #007bff; /* 활성화된 버튼 색상 */
+  background-color: #e3f2fd;
+  border-radius: 4px;
+}
+
+/* 에디터 컨테이너 */
+.ql-container {
+  border: none !important;
+  border-radius: 8px; /* 둥근 모서리 */
+  margin-top: 16px; /* 툴바와 간격 */
+  padding: 0px !important; /* 내부 여백 */
+  background-color: #ffffff; /* 배경색 */
+  font-family: "WantedSans", sans-serif !important;
+}
+
+.ql-container:focus {
+  outline-style: dashed !important;
+  outline: 1px solid #aaa !important;
+}
+
+/* 에디터 내부 스타일 */
+.ql-editor {
+  font-size: 16px; /* 글꼴 크기 */
+  color: #333; /* 글자 색상 */
+  min-height: 200px; /* 최소 높이 */
+  line-height: 1.5; /* 줄 간격 */
+}
+
+/* 플레이스홀더 스타일 */
+.ql-editor.ql-blank::before {
+  content: attr(data-placeholder);
+  font-style: normal !important;
+  white-space: pre-wrap !important;
+  display: block !important;
+  color: #aaa !important; /* 플레이스홀더 색상 */
+}
+
+/* 체크박스 스타일 */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* 안내 메시지 스타일 */
+.info-message {
+  margin-top: 24px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 14px;
+}
+/* 제목 입력 필드 스타일 */
+.title-container {
+  margin-bottom: 12px; /* 에디터와의 간격 */
+}
+
+.title-input {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.title-input:focus {
+  outline-style: dashed !important;
+  outline: 1px solid #aaa;
+}
+
+.title-input::placeholder {
+  color: #aaa;
+  font-weight: normal;
+}
