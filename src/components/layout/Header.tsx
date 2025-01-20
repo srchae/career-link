@@ -9,7 +9,7 @@ export default function Header() {
         <nav className="flex w-full justify-between items-center">
           <Link href="/">
             <p className="text-xl font-semibold">
-              Career<span className="text-lime-500">📢</span>Link
+              Career<span className="text-lime-500">-</span>Link
             </p>
           </Link>
           <section className="flex items-center gap-5">

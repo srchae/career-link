@@ -4,6 +4,7 @@ import { PagesTopLoader } from "nextjs-toploader/pages";
 import { ToastContainer } from "react-toastify";
 
 import { FullScreenContainer } from "@/components/layout/FullScreenContainer";
+import { useRouter } from "nextjs-toploader/app";
 
 const DynamicQuillEditor = dynamic(
   () => import("@/components/form/QuillEditor"),
@@ -20,6 +21,8 @@ export interface Note {
 }
 
 export default function Post() {
+  const router = useRouter();
+  console.log(router);
   return (
     <>
       <PagesTopLoader color="#334155" />
@@ -28,7 +31,6 @@ export default function Post() {
         <FullScreenContainer>
           <div className="flex w-full min-h-screen gap-6 py-8 justify-center">
             <DynamicQuillEditor />
-            {/* <Sidebar /> */}
           </div>
         </FullScreenContainer>
       </main>

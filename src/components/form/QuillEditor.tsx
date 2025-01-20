@@ -4,12 +4,12 @@ import "quill/dist/quill.snow.css"; // Quill의 스타일 가져오기
 
 import { useEffect, useRef, useState } from "react";
 
-import { useRouter } from "next/navigation";
 import Quill from "quill"; // Quill을 import로 가져옴
 import { toast } from "react-toastify";
 
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
+import { useRouter } from "nextjs-toploader/app";
 import { Icons } from "../Icons";
 
 const QuillEditor = () => {
@@ -23,6 +23,7 @@ const QuillEditor = () => {
     setIsOpen(false);
     router.push("/");
   };
+  
   useEffect(() => {
     if (
       editorRef.current &&

@@ -19,7 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"antialiased"}>
-        <NextTopLoader color="#334155" showSpinner={true} height={3} />
+        <NextTopLoader
+          color="#334155"
+          showSpinner={true}
+          height={3}
+          speed={10}
+        />
         <Header />
         <FullScreenContainer>{children}</FullScreenContainer>
         {/* <Sidebar /> */}
